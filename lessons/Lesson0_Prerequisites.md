@@ -4,7 +4,7 @@ In this tutorial, you will be building a search engine to search for product att
 
 To participate in this tutorial, you need to complete the following prerequisites:
 
-1. Install [Python 3.7.9](https://www.python.org/downloads/release/python-364/).
+1. Install [Python 3.7.9](https://www.python.org/downloads/release/python-379/).
 
 2. Install Elasticsearch 7.11 and Kibana 7.11 (Note: You may need to install [Java](https://java.com/en/download/))
 
