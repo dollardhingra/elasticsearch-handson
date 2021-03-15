@@ -1,0 +1,33 @@
+# Hello! This is the Kibana Dev tools console, we'll use this to interact with Elasticsearch
+
+
+#--------------------------------------
+# Basic Search: Querying documents with GET
+#--------------------------------------
+
+# We now have about 20k products in the index!
+# Let's search for them.
+# Find *all* documents
+
+GET /products_index/product/_search
+
+# This is the same query.
+GET /products_index/product/_search
+{
+  "query": {
+    "match_all": {}
+  }
+}
+
+# Let's find all necklaces!
+GET /products_index/product/_search
+{
+  "query": {
+    "match": {
+      "name": "necklace"
+    }
+  }
+}
+
+# Results are ranked by "relevance" (_score)
+# More info: https://www.elastic.co/guide/en/elasticsearch/guide/current/relevance-intro.html
