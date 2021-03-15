@@ -25,7 +25,7 @@ def index_product(es, product: ProductData):
 
     es.create(
         index=INDEX_NAME,
-        doc_type=DOC_TYPE,
+        # doc_type=DOC_TYPE,
         id=1,
         body={
             "name": "A Great Product",
